@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <title>To-Do List App</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    
+    <div id="current_date"></p>
+      <script>
+      date = new Date();
+      year = date.getFullYear();
+      month = date.getMonth() + 1;
+      day = date.getDate();
+      document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year;
+      </script>
+
+    <div class="container">
+      <div class="alignment d-flex flex-column justify-content-center align-items-center">
+        <div class="app bg-light rounded shadow text-body">
+
+          <div class="topbar bg-dark text-light rounded-top">
+            
+          </div>
+
+          <!--Actual list element -->
+          <div class="tasks">
+            <ul>
+              <li><label><input type="checkbox" checked><i></i><span>Study JavaScript</span><a href="#">x</a></label></li>
+              <li><label><input type="checkbox"><i></i><span>Study HTML CSS</span><a href="#">x</a></label></li>
+              <li><label><input type="checkbox"><i></i><span>Practice coding exercises</span><a href="#">x</a></label></li>
+            </ul>
+          </div>
+          <input type="text" class="newtask rounded-bottom" placeholder="Enter a new item...">
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+   
+    <script src="script.js"></script>
+  </body>
+
+</html>
