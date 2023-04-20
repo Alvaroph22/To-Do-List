@@ -14,15 +14,18 @@
   </head>
 
   <body>
-    
-    <div id="current_date"></p>
-      <script>
-      date = new Date();
-      year = date.getFullYear();
-      month = date.getMonth() + 1;
-      day = date.getDate();
-      document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year;
-      </script>
+    <!-- Date -->
+      <div id="current_date"></p>
+          <script>
+                  date = new Date();
+                  year = date.getFullYear();
+                  month = date.getMonth() + 1;
+                  day = date.getDate();
+                  document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year;
+          </script>
+      </div>
+
+    <!-- To do list -->
 
     <div class="container">
       <div class="alignment d-flex flex-column justify-content-center align-items-center">
@@ -35,7 +38,7 @@
           <!--Actual list element -->
           <div class="tasks">
             <ul>
-              <li><label><input type="checkbox" checked><i></i><span>Study JavaScript</span><a href="#">x</a></label></li>
+              <li><label><input type="checkbox"><i></i><span>Study JavaScript</span><a href="#">x</a></label></li>
               <li><label><input type="checkbox"><i></i><span>Study HTML CSS</span><a href="#">x</a></label></li>
               <li><label><input type="checkbox"><i></i><span>Practice coding exercises</span><a href="#">x</a></label></li>
             </ul>

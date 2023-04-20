@@ -1,38 +1,8 @@
-const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
-let today = document.querySelector("#weekday");
-let monthday = document.querySelector("#monthday")
-let month = document.querySelector("#month");
-let hour = document.querySelector("#hour");
-let minutes = document.querySelector("#minutes");
-let ampm = document.querySelector("#ampm");
-setInterval(() => {
-  let now = new Date();
-  let day = days[now.getDay()];
-  let monthname = months[now.getMonth()];
-  let notArmy = now.getHours() - 12;
-  today.innerHTML = `${day}, `;
-  monthday.innerHTML = `${now.getDate()} of `;
-  month.innerHTML = monthname;
-  if (now.getHours() > 12) {
-    hour.innerHTML = notArmy;
-    ampm.innerHTML = "PM"
-  } else {
-    hour.innerHTML = now.getHours();
-    ampm.innerHTML = "AM";
-  }
-  minutes.innerHTML = now.getMinutes() + " ";
-  if (now.getMinutes() < 10) {
-    minutes.innerHTML = "0" + now.getMinutes();
-  }
-}, 1000)
-
-
-
-
-
-
-
+date = new Date();
+year = date.getFullYear();
+month = date.getMonth() + 1;
+day = date.getDate();
+document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year;
 
 /* actual to do list stuff */
 
