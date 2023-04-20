@@ -14,26 +14,25 @@
   </head>
 
   <body>
-    <!-- Date -->
-      <div id="current_date"></p>
-          <script>
-                  date = new Date();
-                  year = date.getFullYear();
-                  month = date.getMonth() + 1;
-                  day = date.getDate();
-                  document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year;
-          </script>
-      </div>
+    <script src="script.js"></script>
 
     <!-- To do list -->
 
-    <div class="container">
+    
       <div class="alignment d-flex flex-column justify-content-center align-items-center">
         <div class="app bg-light rounded shadow text-body">
 
-          <div class="topbar bg-dark text-light rounded-top">
-            
-          </div>
+            <div id="current_date">
+              <script>
+                      date = new Date();
+                      year = date.getFullYear();
+                      month = date.getMonth() + 1;
+                      day = date.getDate();
+                      document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year;
+              </script>
+           </div>
+
+          <div class="topbar bg-dark text-light rounded-top"> </div>
 
           <!--Actual list element -->
           <div class="tasks">
@@ -43,13 +42,11 @@
               <li><label><input type="checkbox"><i></i><span>Practice coding exercises</span><a href="#">x</a></label></li>
             </ul>
           </div>
-          <input type="text" class="newtask rounded-bottom" placeholder="Enter a new item...">
+             <input type="text" class="newtask rounded-bottom" placeholder="Enter a new item...">
         </div>
       </div>
-    </div>
-    <!-- Optional JavaScript -->
    
-    <script src="script.js"></script>
+     
   </body>
 
 </html>
