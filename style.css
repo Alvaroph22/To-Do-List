@@ -22,12 +22,14 @@ body {
 }
 
 #current_date{
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.863);
+  text-align: left;
+  font-weight: bold;
+  
 }
 
-.titulo{
+.apptitle{
   text-align: center;
+  color: rgb(255, 0, 0);
   font-weight: bold;
 }
 
